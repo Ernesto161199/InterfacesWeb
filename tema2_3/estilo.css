@@ -4,7 +4,7 @@ body {
   }
 
   header {
-    display: flex;
+    display:flex;
     justify-content: space-between;
     align-items: center;
    /* padding: 10px;*/
@@ -50,7 +50,7 @@ body {
   }
 
   .llamatext p{
-    margin-left: 80px;
+    margin-left: 490px;
     font-size: 12px;
   }
   .llamatext{
@@ -83,5 +83,43 @@ li a:hover {
 }
 
 .inicio{
-  margin-left:200px ;
+  margin-left:24em ;
 }
+
+/*----formulario------*/
+
+.botonEnviar{
+  margin-left: 40em;
+  margin-top: 10px; 
+}
+
+.cajaMenu{
+  margin-top: 10px;
+  float: left;
+  display: block;
+  background-color: #404040;
+  display:contents; 
+}
+.cajaMenu label{
+  margin-left: 3em;
+
+}
+.formulario{
+  background-color: #b7b7b7;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/*-----------navegar--------*/
+
+.navegar ul li{
+  overflow: hidden;
+  padding-left: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.navegar ul{
+  background-color:rgb(47, 47, 150);
+}
+
+/*-----contenido--------*/
