@@ -56,3 +56,32 @@ body {
   .llamatext{
     margin-bottom: 20px;
   }
+
+
+/* -------Menu-----------*/
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #404040;
+}
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: rgb(181, 181, 181);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #c70101;
+}
+
+.inicio{
+  margin-left:200px ;
+}
