@@ -123,3 +123,33 @@ li a:hover {
 }
 
 /*-----contenido--------*/
+
+scroll-container {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+scroll-container {
+  display: block;
+  width: 180px;
+  height: 90px;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
+scroll-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  font-size: 12px;
+}
+
+.contenido{
+  height: 20px;
+  width: 60%;
+  /* Codigo para centrar*/
+  display: flex;
+  justify-content: center;
+  /* Fin del codigo para centrar*/
+}
