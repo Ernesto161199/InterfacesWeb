@@ -124,32 +124,62 @@ li a:hover {
 
 /*-----contenido--------*/
 
-scroll-container {
-  display: block;
-  margin: 0 auto;
-  text-align: center;
+
+
+.tabla {
+  display: flex;
+  justify-content: space-around;
+  width: 70%;
+  margin: auto;
+  background-color: #707070;
 }
-scroll-container {
+.titu{
+  display: flex;
+  justify-content: space-around;
+  width: 70%;
+  margin: auto; 
+  background-color: #b7b7b7;
+}
+.titu1{
+  display: flex;
+  justify-content: space-around;
+  width: 70%;
+  margin: auto;
+  text-decoration: underline; 
+  background-color: #404040;
+}
+.columna {
+  background-color: #707070;
+  border: 1px solid #dee2e6;
+  border-radius: 0.25rem;
+  padding: 1rem;
+  width: 30%;
+}
+
+.t {
+  background-color: #ffffff;
+  border: 1px solid #dee2e6;
+  border-radius: 0.25rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+.t h3{
+  text-decoration: underline;
+}
+.scroll{
   display: block;
-  width: 180px;
+  width: 50%;
   height: 90px;
   overflow-y: scroll;
   scroll-behavior: smooth;
+  margin-left: 3em;
+  text-align: center;
+}
+.datos1{
+  margin-left: 2em;
+}
+.datos{
+  margin-left: 2em;
 }
 
-scroll-page {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  font-size: 12px;
-}
 
-.contenido{
-  height: 20px;
-  width: 60%;
-  /* Codigo para centrar*/
-  display: flex;
-  justify-content: center;
-  /* Fin del codigo para centrar*/
-}
