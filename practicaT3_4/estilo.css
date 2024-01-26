@@ -51,10 +51,14 @@ body {
   .llamatext p{
     margin-left: 30.625rem;
     font-size: 0.75rem;
+    text-align: center;
   }
-  .llamatext{
-    margin-bottom: 1.25rem;
-  }
+  .llamatext {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
   
 
 /* -------Menu-----------*/
@@ -64,6 +68,8 @@ body {
     padding: 0;
     overflow: hidden;
     background-color: #404040;
+    display: flex;
+    justify-content:start;
 }
 li {
     float: left;
@@ -202,33 +208,80 @@ li a:hover {
   margin-left: 2em;
 }
 
-
-@media screen and (max-width: 768px) {
-  header {
-      grid-template-columns: 1fr;
+@media screen and (max-width: 1024px) {
+  header{
+    display: none;
   }
-
-  .llamatext p {
-      margin-left: 0;
+  .left-section {
+      flex-direction: column;
+      align-items: center;
       text-align: center;
   }
 
-  .inicio {
+  .title-section {
       margin-left: 0;
+      margin-top: 1rem;
   }
 
-  .botonEnviar {
-      margin-left: 0;
+  .right-section {
+      display: none;
   }
+  .pentañas{
+    display: flex;
+    justify-content:flex-start;
+    width: 80%;
+  }
+  .tabla{
+    display: flex;
+    justify-content:space-around;
+    width: 100%;
+  }
+
 }
 
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 768px) {
+  header {
+      display: none;
+  }
+
+  .inicio,
+  .botonEnviar,
   .cajaMenu label {
       margin-left: 0;
   }
 
   .formulario {
       padding: 1rem;
+  }
+
+  .cajaMenu {
+      width: 100%; /* Asegura que la caja del menú ocupe el ancho completo */
+  }
+
+  .formulario label {
+      display: block;
+      margin-bottom: 0.5rem;
+  }
+
+  .formulario input {
+      width: 95%;
+      margin-bottom: 1rem;
+      padding: 0.5rem;
+  }
+
+  .botonEnviar {
+      width: 100%;
+  }
+  .pentañas{
+    display: flex;
+    justify-content:flex-start;
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .formulario {
+      padding: 0.625rem;
   }
 }
 
