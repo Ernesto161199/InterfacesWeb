@@ -2,7 +2,13 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
   }
-
+  .audio-fondo {
+    width: 15em;
+  } 
+  .cajaVideos{
+    display: flex;
+    justify-content:space-around;
+  }
   header {
     display:flex;
     justify-content: space-between;
@@ -18,10 +24,18 @@ body {
     align-items: center;
     font-size: 1.25rem;
     padding-left: 0.625rem;
+
   }
 
   .title-section {
     margin-left: 1.75rem;
+    position: relative;
+    animation: mymove 6s infinite;
+  }
+  @keyframes mymove
+  {
+    from {left:0px;}
+    to {left:20px;}
   }
   .title-section h1{
     margin-bottom: 0.625rem;
@@ -39,6 +53,10 @@ body {
     background-position: center;
     border-radius: 50%;
     margin-bottom: 0.625rem;
+    transition: transform 5s;
+  }
+  .background-image:hover{
+    transform: translateX(10px) rotate(5turn);	
   }
 
   .subtext {
@@ -58,6 +76,23 @@ body {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    animation-duration: 6s;
+		animation-iteration-count: infinite;
+		animation-name: MiAnimacion;
+		animation-direction: alternate;	
+}
+@keyframes MiAnimacion {
+  0% {
+    font-size:0%;
+    margin-right:10%;
+  }
+  
+  50% {font-size:400%;}
+  
+  100% {font-size:400%;
+    margin-left:20%;
+    width:100%;			
+  }
 }
   
 
@@ -277,6 +312,7 @@ li a:hover {
     justify-content:flex-start;
     width: 80%;
   }
+
 }
 
 @media screen and (max-width: 520px) {
