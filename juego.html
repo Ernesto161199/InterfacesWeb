@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atrapar el raton</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="game-container">   
+        <!-- Pantalla inicial con opciones de nivel -->
+        <div id="start-screen">
+            <p>Selecciona un nivel:</p>
+            <button class="level-button" data-level="1">Nivel 1</button>
+            <button class="level-button" data-level="2">Nivel 2</button>
+            <button class="level-button" data-level="3">Nivel 3</button>
+            <br><br>
+            <a href="./index.html">Volver al inicio</a>
+        </div>
+        
+        <!-- Pantalla principal del juego -->
+        <div id="game-screen" class="hidden">
+            <h1>Atrapaa al Ratón!! Se robo mi queso</h1>
+            <div id="mouse"></div>
+        </div>
+        
+        <!-- Pantalla de fin de juego -->
+        <div id="end-screen" class="hidden">
+            <h1 id="end-message"></h1>
+            <button id="restart-button">Jugar de nuevo</button>
+        </div>
+    </div>
+    
+    <script src="./script.js"></script>
+</body>
+</html>
