@@ -4,6 +4,7 @@ body {
     text-align: center;
     margin: 0;
     padding: 0;
+    padding-top: 5em;
 }
 
 .menu-container {
@@ -17,8 +18,27 @@ body {
 
 h1 {
     color: #333;
+    margin-bottom: 20px;
 }
 
+.juego {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.juego:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
 .game-link {
     display: block;
     margin-bottom: 20px;
@@ -40,6 +60,7 @@ h1 {
     display: inline-block;
     padding: 10px 20px;
     margin-top: 20px;
+    margin-bottom: 10px;
     font-size: 18px;
     cursor: pointer;
     background-color: #ff412c;
